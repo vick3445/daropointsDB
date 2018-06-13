@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">daropointsDB</string>
+    <string name="pref_file">preference file</string>
+    <string name="pref_login_status">preference_login_status</string>
+    <string name="pref_username">prefrence_username</string>
+    <string name="not_registered_sign_up_here">Not Registered, Sign up here...</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="username">Username</string>
+    <string name="logout">logout</string>
+    <string name="homepage">Homepage</string>
+</resources>
