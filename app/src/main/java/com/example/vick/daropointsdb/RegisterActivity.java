@@ -43,7 +43,7 @@ public class RegisterActivity extends AppCompatActivity {
         txtLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(RegisterActivity.this, LoginActivity.class));
+                startActivity(new Intent(getApplicationContext(), LoginActivity.class));
             }
         });
 
@@ -108,16 +108,11 @@ public class RegisterActivity extends AppCompatActivity {
                 @Override
                 public void onFailure(Call<ServerResponse> call, Throwable t) {
 
-                    Toast.makeText(getApplicationContext(),t.getMessage(),Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), "connection failed", Toast.LENGTH_LONG).show();
 
                 }
             });
 
-//            edtFirstname.setText("");
-//            edtLastname.setText("");
-//            edtUsername.setText("");
-//            edtIdnumber.setText("");
-//            edtPassword.setText("");
 
         }else {
             edtPassword.setError("password must be more than 6 characters..");

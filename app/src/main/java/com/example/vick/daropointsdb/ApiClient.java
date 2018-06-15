@@ -6,7 +6,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class ApiClient {
 
-    public static final String BASE_URL = "http://192.168.43.224/daropoints/";
+    public static final String BASE_URL = "http://10.0.2.2/daropoints/";
     public static Retrofit  RETROFIT = null;
 
     public static Retrofit getClient(){
